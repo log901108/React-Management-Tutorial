@@ -80,6 +80,7 @@ progress = () =>{
                 <TableCell>birth</TableCell>
                 <TableCell>gender</TableCell>
                 <TableCell>job</TableCell>
+                <TableCell>Config</TableCell>
                 </TableRow>
              </TableHead>
               <TableBody>
@@ -87,6 +88,7 @@ progress = () =>{
                   this.state.customers ? this.state.customers.map(c => {
                     return(
                       <Customer
+                          stateRefresh={this.stateRefresh}
                           key={c.id}
                           id = {c.id}
                           image ={c.image}
